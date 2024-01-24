@@ -72,7 +72,7 @@ const HomePage = () => {
 
       <section className="margin__setter">
         <SmallHeader customLetter="W" headerText="ork experience" />
-        <div className="xl:w-[57.5%] 2xl:w-[57.5%] lg:absolute lg:top-[190%] xl:top-[190%] 2xl:top-[180%] lg:left-[40%]">
+        <div className="xl:w-[57.5%] 2xl:w-[57.5%] lg:absolute lg:top-[180%] xl:top-[180%] 2xl:top-[180%] lg:left-[40%]">
           <div className="">
             <div className="grid grid-cols-1 grid-rows-3 my-[2.5rem]">
               {workExperienceData.experiences.map((experience, index) => (
