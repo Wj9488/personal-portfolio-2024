@@ -19,7 +19,7 @@ const AboutPage = () => {
         <ParallaxImages />
       </section>
       <section className="lg:text-lg margin__setter">
-        <div className="lg:w-[50%] xl:w-[50%] 2xl:w-[50%] lg:absolute lg:top-[200%] xl:top-[180%] 2xl:top-[175%] lg:left-[40%]">
+        <div className="lg:w-[50%] xl:w-[50%] 2xl:w-[50%] lg:absolute lg:top-[200%] xl:top-[180%] 2xl:top-[155%] lg:left-[40%]">
           <p className="opacity-50 mb-[1.25rem]">About Me</p>
           <p>
             I love turning my design ideas into real products that people can
