@@ -10,16 +10,15 @@ const AboutPage = () => {
         <div className="ml-[1.25rem] lg:ml-[7.5rem]">
           <LargeHeader customLetter="A" headerText="bout me" />
         </div>
-        <p className="lg:w-[20%] lg:mt-[5rem] mt-[2.5rem] absolute top-50 left-[40%]">
-          Bilingual English and French creative front-end developer studying
-          business and management at Exeter University.
+        <p className="lg:w-[25%] lg:mt-[5rem] mt-[2.5rem] absolute top-50 left-[40%]">
+          Currently available for freelance design or coding freelance while I finish my final year of university. 
         </p>
       </section>
       <section>
         <ParallaxImages />
       </section>
       <section className="lg:text-lg margin__setter">
-        <div className="lg:w-[50%] xl:w-[50%] 2xl:w-[50%] lg:absolute lg:top-[200%] xl:top-[180%] 2xl:top-[155%] lg:left-[40%]">
+        <div className="lg:w-[50%] xl:w-[50%] 2xl:w-[50%] lg:absolute lg:top-[200%] xl:top-[180%] 2xl:top-[145%] lg:left-[40%]">
           <p className="opacity-50 mb-[1.25rem]">About Me</p>
           <p>
             I love turning my design ideas into real products that people can
@@ -36,7 +35,7 @@ const AboutPage = () => {
             After I got better at understanding programming, I went back to
             Python. Now, I even teach workshops in the UK’s biggest student-run
             Python bootcamp, called ExCode. Apart from all this, I also enjoy
-            skiing, trading in cryptocurrencies, and going to the gym.
+            skiing, trading cryptocurrencies, and going to the gym.
           </p>
         </div>
       </section>

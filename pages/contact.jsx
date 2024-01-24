@@ -1,16 +1,37 @@
-import PageTransition from "@/Components/Utils/PageTransition"
-import LargeHeader from "@/Components/LargeHeader"
+import PageTransition from "@/Components/Utils/PageTransition";
+import Head from "next/head";
+import ContactPage from "@/Components/ContactPage";
 
-const ContactPage = () => {
+const Contact = () => {
   return (
-    <PageTransition>
-          <section className="margin__setter mt-[5rem]">
-        <div className="ml-[7.5rem]">
-            <LargeHeader customLetter="C" headerText="ontact me"/>
-        </div>
-      </section>
-    </PageTransition>
-  )
-}
+    <>
+      <Head>
+        <title>Will Jones | Contact</title>
+        <link rel="shortcut icon" href="/" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Will Jones" />
+        <meta
+          property="og:description"
+          content="Get the website your small business deserves. Helping professionals and business owners 
+        get a modern, responsive and creative website."
+        />
+        <meta
+          name="description"
+          content="Get the website your small business deserves. Helping professionals and business owners 
+        get a modern, responsive and creative website."
+        />
+        <meta property="og:image" content="/" />
+        <meta name="keywords" content="" />
+      </Head>
 
-export default ContactPage
+      <PageTransition>
+        <ContactPage />
+      </PageTransition>
+    </>
+  );
+};
+
+export default Contact;

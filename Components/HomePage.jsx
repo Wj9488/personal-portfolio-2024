@@ -78,18 +78,18 @@ const HomePage = () => {
               {workExperienceData.experiences.map((experience, index) => (
                 <div
                   key={index}
-                  className="text-base lg:text-lg border__bottom grid grid-cols-2 lg:grid-cols-3 gap-6 grid-rows-1 items-start py-[1rem]"
+                  className="text-base lg:text-lg border__bottom grid grid-cols-2 lg:grid-cols-3 gap-4 grid-rows-1 items-start py-[1rem]"
                 >
                   <div className="">
-                    <p className="opacity-50 mb-2">Company Name</p>
+                    <p className="opacity-50 mb-2 text-sm lg:text-lg">Company Name</p>
                     <p>{experience.companyName}</p>
                   </div>
                   <div className="">
-                    <p className="opacity-50 mb-2">Position</p>
+                    <p className="opacity-50 mb-2 text-sm lg:text-lg">Position</p>
                     <p>{experience.position}</p>
                   </div>
                   <div className="">
-                    <p className="opacity-50 mb-2">Period</p>
+                    <p className="opacity-50 mb-2 text-sm lg:text-lg">Period</p>
                     <p>{experience.period}</p>
                   </div>
                 </div>
