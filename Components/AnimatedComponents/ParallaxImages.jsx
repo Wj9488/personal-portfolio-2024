@@ -49,7 +49,7 @@ export default function ParallaxImages() {
                     width={275}
                     height={375}
                     alt="Will Jones"
-                    className="lg:ml-[2rem] ml-[1.25rem] mt-[2.5rem] lg:mt-[15rem] rounded-2xl"
+                    className="lg:ml-[2rem] ml-[1.25rem] mt-[2.5rem] lg:mt-[15rem] lg:block hidden rounded-2xl"
                 />
             </a.div>
             <a.div
