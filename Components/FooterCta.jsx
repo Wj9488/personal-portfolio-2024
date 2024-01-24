@@ -4,7 +4,7 @@ import LargeHeader from "./LargeHeader";
 const FooterCta = () => {
   return (
     <div className="margin__setter">
-      <div className="mt-[10rem] lg:ml-[10rem] ml-[1.25rem] mb-[2.5rem]">
+      <div className="mt-[10rem] lg:w-[70%] xl:w-[60%] lg:ml-[10rem] ml-[1.25rem] mb-[2.5rem]">
         <LargeHeader customLetter="L" headerText="et's work together." />
       </div>
       <div className="flex items-center gap-4 lg:ml-[20%] ml-[2.5rem]">
