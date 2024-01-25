@@ -71,3 +71,11 @@ h1{
   border: 2px solid var(--global-secondary-col);
 }
 
+/* Contact Form */
+.target__form {
+  display: flex;
+  flex-direction: column;
+}
+.target-submit-button {
+  border: solid 2px var(--global-accent-col);
+}

@@ -17,7 +17,7 @@ export default function ParallaxImages() {
     const imageFourTranslate = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
 
     return (
-        <div className="mt-[20rem] margin__setter">
+        <div className="mt-[15rem] lg:mt-[10rem] margin__setter">
             <div className="flex items-start justify-between">
             <a.div
                 style={{ y: imageOneTranslate  }}

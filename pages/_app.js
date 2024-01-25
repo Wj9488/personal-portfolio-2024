@@ -1,4 +1,4 @@
-import AbsoluteText from "@/Components/AbsoluteText";
+import Footer from "@/Components/Footer";
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import localFont from "next/font/local"
@@ -25,7 +25,7 @@ export default function App({ Component, pageProps, router }) {
       <div className={`main global__font_setter scroll-smooth ${f.className}`}>
           <AnimatePresence mode='wait'>
               <Component key={router.route} {...pageProps} />
-              <AbsoluteText />
+              <Footer />
           </AnimatePresence>
       </div>
   )

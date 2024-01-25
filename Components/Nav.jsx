@@ -11,10 +11,10 @@ const Nav = () => {
       <div>
         <ul className="z-10 flex items-center justify-between gap-4 lg:gap-8 xl:gap-10 bg-[#EDEDE9] px-4 py-1 rounded-2xl">
           <li className="lg:text-lg lg:my-[0rem] my-1">
-            <Link href={"/#projects"}>Projects</Link>
+            <Link className="hover:opacity-50 transition-all duration-200" href={"/#projects"}>Projects</Link>
           </li>
           <li className="lg:text-lg ">
-            <Link href={"/about"}>About</Link>
+            <Link className="hover:opacity-50 transition-all duration-200" href={"/about"}>About</Link>
           </li>
           <Link href={"/contact"}>
             <button className=" cta__border py-1 lg:px-4 px-2 rounded-2xl font-medium">

@@ -2,28 +2,30 @@ import ParallaxImages from "./AnimatedComponents/ParallaxImages";
 import FooterCta from "./FooterCta";
 import LargeHeader from "./LargeHeader";
 import Footer from "./Footer";
+import AbsoluteText from "./AbsoluteText";
 
 const AboutPage = () => {
   return (
     <main className="overflow-x-hidden">
+      <AbsoluteText />
       <section className="margin__setter mt-[5rem]">
         <div className="ml-[1.25rem] lg:ml-[7.5rem]">
           <LargeHeader customLetter="A" headerText="bout me" />
         </div>
-        <p className="lg:w-[25%] lg:mt-[5rem] mt-[2.5rem] absolute top-50 left-[40%]">
+        <p className="lg:w-[25%] lg:mt-[5rem] mt-[2.5rem] ml-[20%] lg:ml-[40%]">
           Currently available for freelance design or coding freelance while I finish my final year of university. 
         </p>
       </section>
       <section>
         <ParallaxImages />
       </section>
-      <section className="lg:text-lg margin__setter">
-        <div className="lg:w-[50%] xl:w-[50%] 2xl:w-[50%] lg:absolute lg:top-[200%] xl:top-[180%] 2xl:top-[145%] lg:left-[40%]">
-          <p className="opacity-50 mb-[1.25rem]">About Me</p>
+      <section className="lg:text-lg margin__setter mt-[2.5rem]">
+        <div className="lg:ml-[40%]">
+          <p className="opacity-50 mb-[1.25rem] lg:text-lg text-sm">About Me</p>
           <p>
             I love turning my design ideas into real products that people can
             use. It's very satisfying to use my skills to help clients get great
-            websites.
+            websites. 
             <br />
             <br />
             I started with Python, but found it tough at first. This led me to
@@ -40,7 +42,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="mt-[5rem] lg:mt-[25rem]">
+      <section className="mt-[5rem] lg:mt-[10rem]">
         <div className="grid grid-cols-2 lg:grid-cols-3 grid-rows-2 text-lg lg:gap-4 gap-2">
           <div className="text-center">
             <p className="text-[6rem] lg:text-[8rem] xl:text-[10rem] 2xl:text-[12rem] accent__col_text mb-[1.25rem]">3</p>
@@ -64,7 +66,6 @@ const AboutPage = () => {
       <section className="">
         <FooterCta />
       </section>
-      <Footer />
     </main>
   );
 };

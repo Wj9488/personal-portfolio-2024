@@ -2,18 +2,18 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className="mt-[5rem] mb-[2.5rem] border__top text-lg margin__setter">
+    <footer className="mt-[10rem] mb-[2.5rem] border__top text-lg margin__setter">
       <div className="flex items-center justify-between pt-1">
         <p>William.Jones</p>
         <ul className="flex items-center justify-between gap-10 bg-[#EDEDE9] px-4 py-1 rounded-2xl">
           <li className="lg:text-lg">
-            <Link href={"/#"}>Back to top</Link>
+            <Link className="hover:opacity-50 transition-all duration-200" href={"/#"}>Back to top</Link>
           </li>
           <li className="lg:text-lg hidden lg:block">
-            <Link href={"/#projects"}>Projects</Link>
+            <Link className="hover:opacity-50 transition-all duration-200" href={"/#projects"}>Projects</Link>
           </li>
           <li className="lg:text-lg">
-            <Link href={"/about"}>About</Link>
+            <Link className="hover:opacity-50 transition-all duration-200" href={"/about"}>About</Link>
           </li>
         </ul>
       </div>
