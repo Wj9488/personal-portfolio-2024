@@ -11,13 +11,13 @@ const ContactPage = () => {
         </div>
       </section>
       <section className="margin__setter my-[10rem]">
-        <div className="flex items-start justify-between">
+        <div className="lg:flex items-start justify-between">
           <div>
             <GMTClock />
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2 w-full lg:mt-0 mt-[5rem]">
           <form class="target__form" action="https://formsubmit.io/send/ee2f7dc4-1dec-4100-81c0-054138a44eb8" method="POST">
-              <input type="hidden" name="_redirect" id="name" value="https://william.services/?mail_sent=true"/>
+              <input type="hidden" name="_redirect" id="name" value="https://www.linkedin.com/in/william-jones-450715251/"/>
               <p class="my-[1.25rem]">Your Name <sup>*</sup></p>
               <input class="rounded-2xl bg-transparent py-2 px-4 text-lg border border-[#070707]" placeholder="Name..." required name="name" type="text" id="name"/>
               <p class="my-[1.25rem]">Your Email <sup>*</sup></p>
@@ -29,7 +29,7 @@ const ContactPage = () => {
           </form>
           </div>
         </div>
-        <div className="mt-[10rem]">
+        <div className="lg:mt-[10rem] mt-[5rem]">
           <p className="opacity-50 lg:text-lg text-sm mb-2">Prefer LinkedIn?</p>
           <SecondaryCta ctaText="Message me on LinkedIn" />
         </div>
