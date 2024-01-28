@@ -7,7 +7,7 @@ const Footer = () => {
         <p>William.Jones</p>
         <ul className="flex items-center justify-between gap-10 bg-[#EDEDE9] px-4 py-1 rounded-2xl">
           <li className="lg:text-lg">
-            <Link className="hover:opacity-50 transition-all duration-200" href={"/#"}>Back to top</Link>
+            <Link className="hover:opacity-50 transition-all duration-200" href={"#"}>Back to top</Link>
           </li>
           <li className="lg:text-lg hidden lg:block">
             <Link className="hover:opacity-50 transition-all duration-200" href={"/#projects"}>Projects</Link>
