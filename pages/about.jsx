@@ -11,7 +11,7 @@ const About = () => {
       <title>
         Will Jones | About
       </title>
-      <link rel="shortcut icon" href="/" />
+      <link rel="shortcut icon" href="/ws_icon.png" />
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta property="og:locale" content="en_GB" />
@@ -27,7 +27,7 @@ const About = () => {
         content="Get the website your small business deserves. Helping professionals and business owners 
         get a modern, responsive and creative website."
       />
-      <meta property="og:image" content="/" />
+      <meta property="og:image" content="/ws_icon.png" />
       <meta
         name="keywords"
         content=""

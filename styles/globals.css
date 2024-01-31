@@ -79,3 +79,10 @@ h1{
 .target-submit-button {
   border: solid 2px var(--global-accent-col);
 }
+
+.hvr {
+  transition: all 0.2s ease-in-out;
+}
+.hvr:hover{
+  scale:1.05;
+}

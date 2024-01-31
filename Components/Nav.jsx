@@ -17,7 +17,7 @@ const Nav = () => {
             <Link className="hover:opacity-50 transition-all duration-200" href={"/about"}>About</Link>
           </li>
           <Link href={"/contact"}>
-            <button className=" cta__border py-1 lg:px-4 px-2 rounded-2xl font-medium">
+            <button className="hvr cta__border py-1 lg:px-4 px-2 rounded-2xl font-medium">
                 Let's Talk
             </button>
           </Link>

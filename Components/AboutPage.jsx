@@ -21,7 +21,7 @@ const AboutPage = () => {
       </section>
       <section className="lg:text-lg margin__setter mt-[2.5rem]">
         <div className="lg:ml-[40%]">
-          <p className="opacity-50 mb-[1.25rem] lg:text-lg text-sm">About Me</p>
+          <h2 className="opacity-50 mb-[1.25rem] lg:text-lg text-sm">About Me</h2>
           <p>
             I love turning my design ideas into real products that people can
             use. It's very satisfying to use my skills to help clients get great
