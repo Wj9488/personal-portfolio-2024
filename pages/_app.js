@@ -22,7 +22,7 @@ const f = localFont({
 
 export default function App({ Component, pageProps, router }) {
   return (
-      <div className={`main global__font_setter scroll-smooth ${f.className}`}>
+      <div className={`main global__font_setter ${f.className}`}>
           <AnimatePresence mode='wait'>
               <Component key={router.route} {...pageProps} />
               <Footer />

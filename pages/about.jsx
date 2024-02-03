@@ -1,10 +1,22 @@
 import LargeHeader from "@/Components/LargeHeader";
 import PageTransition from "@/Components/Utils/PageTransition";
 import AboutPage from "@/Components/AboutPage";
+import Lenis from "@studio-freight/lenis";
 
 import Head from "next/head"
+import { useEffect } from "react"
 
 const About = () => {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <>
     <Head>

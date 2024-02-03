@@ -1,8 +1,45 @@
 import Link from "next/link";
+import {motion as a, useAnimation} from "framer-motion"
+import { useState, useEffect } from "react"
 
 const Nav = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0); // New state for storing the last scroll position
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 30 && currentScrollY > lastScrollY) {
+        controls.start({
+          y: -50,
+          rotate: -1,
+          transition: { duration: 0.25, ease: "easeInOut" }
+        });
+        setIsVisible(false);
+      } else if (!isVisible || currentScrollY < lastScrollY) {
+        controls.start({
+          y: 0,
+          rotate: -0,
+          transition: { duration: 0.5, ease: "easeInOut" }
+        });
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY); 
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isVisible, controls, lastScrollY]);
   return (
-    <nav className="z-10 sticky top-1 flex items-center justify-between my-2">
+    <a.nav className="z-10 sticky top-1 flex items-center justify-between my-2"
+    animate={controls}
+    >
       <div className="bg-[#EDEDE9] px-4 lg:py-1 py-2 rounded-2xl z-10">
         <Link className="lg:text-lg font-medium lg:font-normal" href={"/"}>
           William.Jones
@@ -23,7 +60,7 @@ const Nav = () => {
           </Link>
         </ul>
       </div>
-    </nav>
+    </a.nav>
   );
 };
 
