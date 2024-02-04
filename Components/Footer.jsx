@@ -1,4 +1,6 @@
 import Link from "next/link"
+import Image from "next/image"
+import GithubImg from "../public/Images/github-mark.png"
 
 const Footer = () => {
   const scrollTop = () => {
@@ -12,6 +14,17 @@ const Footer = () => {
       <div className="flex items-center justify-between pt-1">
         <p>William.Jones</p>
         <ul className="flex items-center justify-between gap-10 bg-[#EDEDE9] px-4 py-1 rounded-2xl">
+          <li>
+            <Link href={"https://github.com/Wj9488"} target="_blank">
+              <Image 
+                src={GithubImg}
+                alt="Github Logo"
+                width={20}
+                height={20}
+                className="hover:scale-[1.05] transition-all duration-200 lg:block hidden"
+              />
+            </Link>
+          </li>
           <li className="lg:text-lg">
             <button className="hover:opacity-50 transition-all duration-200" onClick={scrollTop}>Back to top</button>
           </li>

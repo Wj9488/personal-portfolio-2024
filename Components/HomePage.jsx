@@ -15,7 +15,6 @@ import AbsoluteText from "./AbsoluteText";
 import SecondaryCta from "./SecondaryCta";
 import ProjectShowcase from "./ProjectShowcase";
 import FooterCta from "./FooterCta";
-import Footer from "./Footer";
 
 const HomePage = () => {
 
@@ -158,7 +157,7 @@ const HomePage = () => {
             <ProjectShowcase
               projectTitle="Birdlime Media"
               projectDetails="An ongoing project worked on during my internship at Thousand Lines® for a London based production company. Birdlime media makes videos and podcasts for charities broadcasters and brands focussing on developing new talent from underrepresented backgrounds and offering them paid work experience.  "
-              projectLink="/?coming-soon"
+              projectLink="#"
               projectLinkText="Coming Soon"
               imgAlt="Birdlime Media"
               imgSource={BirdlimeImage}
@@ -233,7 +232,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="mb-[10rem]">
+        <section className="">
           <FooterCta />
         </section>
       </main>

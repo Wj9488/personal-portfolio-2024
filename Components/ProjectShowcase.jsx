@@ -28,7 +28,7 @@ const ProjectShowcase = ({
             href={projectLink}
             target="_blank"
           >
-            <button className="secondary__cta_border text-lg py-2 px-4 rounded-2xl font-medium">
+            <button className="hvr secondary__cta_border text-lg py-2 px-4 rounded-2xl font-medium">
               {projectLinkText}
             </button>
           </Link>

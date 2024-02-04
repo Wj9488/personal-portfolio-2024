@@ -4,10 +4,24 @@ import LargeHeader from "./LargeHeader";
 import Footer from "./Footer";
 import AbsoluteText from "./AbsoluteText";
 
+import { useState, useEffect } from "react"
+
 const AboutPage = () => {
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setVisible(window.innerWidth > 800);
+    };
+    checkScreenSize()
+    window.addEventListener("resize", checkScreenSize)
+    return () => window.removeEventListener("resize", checkScreenSize)
+  }, [])
   return (
     <main className="overflow-x-hidden">
-      <AbsoluteText />
+      <div>
+        {visible && <AbsoluteText />}
+      </div>
       <section className="margin__setter mt-[5rem]">
         <div className="ml-[1.25rem] lg:ml-[7.5rem]">
           <LargeHeader customLetter="A" headerText="bout me" />

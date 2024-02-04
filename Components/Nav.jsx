@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 
 const Nav = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0); // New state for storing the last scroll position
+  const [lastScrollY, setLastScrollY] = useState(0); 
   const controls = useAnimation();
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const Nav = () => {
 
       if (currentScrollY > 30 && currentScrollY > lastScrollY) {
         controls.start({
-          y: -50,
+          y: -60,
           rotate: -1,
           transition: { duration: 0.25, ease: "easeInOut" }
         });
