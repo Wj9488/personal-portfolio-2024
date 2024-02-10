@@ -3,6 +3,8 @@ import P_side2 from "../../public/Images/w__about_s2.jpg";
 import P_side3 from "../../public/Images/w__about_s3.jpg";
 import P_side4 from "../../public/Images/w__about_s4.jpg";
 
+import SlidingImage from "../Utils/AnimatedImage";
+
 import Image from "next/image";
 import { useScroll, useTransform, motion as a } from "framer-motion";
 
@@ -28,13 +30,7 @@ export default function ParallaxImages() {
                     transition={fadeTransition}
                     style={{ y: imageOneTranslate }}
                 >
-                    <Image 
-                        src={P_side1}
-                        width={200}
-                        height={300}
-                        alt="Will Jones"
-                        className="rounded-2xl"
-                    />
+                    <SlidingImage height="300" width="200" src={P_side1} className="rounded-2xl" />
                 </a.div>
                 <a.div
                     initial={{ opacity: 0 }}
@@ -42,13 +38,7 @@ export default function ParallaxImages() {
                     transition={fadeTransition}
                     style={{ y: imageTwoTranslate }}
                 >
-                    <Image 
-                        src={P_side3}
-                        width={400}
-                        height={600}
-                        alt="Will Jones"
-                        className="lg:ml-[1.25rem] mt-[5rem] ml-[0rem] rounded-2xl lg:w-[400px] lg:h-[600px] h-[auto] w-[350px]"
-                    />
+                    <SlidingImage height="600" width="400" src={P_side3} className="lg:ml-[1.25rem] mt-[5rem] ml-[0rem] rounded-2xl lg:w-[400px] lg:h-[600px] h-[auto] w-[350px]" />
                 </a.div>
                 <a.div
                     initial={{ opacity: 0 }}
@@ -56,13 +46,7 @@ export default function ParallaxImages() {
                     transition={fadeTransition}
                     style={{ y: imageThreeTranslate }}
                 >
-                    <Image 
-                        src={P_side4}
-                        width={275}
-                        height={375}
-                        alt="Will Jones"
-                        className="lg:ml-[2rem] ml-[1.25rem] mt-[2.5rem] lg:mt-[15rem] lg:block hidden rounded-2xl"
-                    />
+                    <SlidingImage height="375" width="275" src={P_side4} className="lg:ml-[2rem] ml-[1.25rem] mt-[2.5rem] lg:mt-[15rem] lg:block hidden rounded-2xl" />
                 </a.div>
                 <a.div
                     initial={{ opacity: 0 }}
@@ -70,13 +54,7 @@ export default function ParallaxImages() {
                     transition={fadeTransition}
                     style={{ y: imageFourTranslate }}
                 >
-                    <Image 
-                        src={P_side2}
-                        width={300}
-                        height={400}
-                        alt="Will Jones"
-                        className="lg:ml-[2.5rem] mt-[-10rem] mr-[1.25rem] rounded-2xl"
-                    />
+                    <SlidingImage height="400" width="300" src={P_side2} className="lg:ml-[2.5rem] mt-[-10rem] mr-[1.25rem] rounded-2xl" />
                 </a.div>
             </div>
         </div>

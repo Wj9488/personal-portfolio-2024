@@ -4,13 +4,17 @@
 @tailwind utilities;
 
 body {
+  /* background-color: #EDEDE9; */
+  /* background: linear-gradient(0.25turn, #FB5607, #ebf8e1, #FB5607); */
   background-color: #EDEDE9;
   min-height: 100vh;
+
 }
 
 :root {
   --global-accent-col: #FB5607;
   --global-secondary-col: #070707;
+  --global-bg: #EDEDE9;
 }
 
 .accent__color_bg {
@@ -18,6 +22,9 @@ body {
 }
 .accent__col_text {
   color: var(--global-accent-col)
+}
+.global__bg {
+  background-color: var(--global-bg);
 }
 
 .global__font_setter {

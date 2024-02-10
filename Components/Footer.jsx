@@ -10,7 +10,7 @@ const Footer = () => {
     });
   }
   return (
-    <footer className="mt-[10rem] mb-[2.5rem] border__top text-lg margin__setter">
+    <footer className="mt-[10rem] mb-[2.5rem] border__top text-lg margin__setter global__bg">
       <div className="flex items-center justify-between pt-1">
         <p>William.Jones</p>
         <ul className="flex items-center justify-between gap-10 bg-[#EDEDE9] px-4 py-1 rounded-2xl">

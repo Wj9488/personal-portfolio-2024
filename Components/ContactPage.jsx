@@ -1,8 +1,23 @@
 import LargeHeader from "./LargeHeader";
 import GMTClock from "./AnimatedComponents/GMTClock";
 import SecondaryCta from "./SecondaryCta";
+import Reveal from "./Utils/Reveal";
+import {motion as a} from "framer-motion"
 
 const ContactPage = () => {
+const formAnim = {
+  initial: {opacity: 0, y: 5},
+  animate: {
+    opacity: 1, 
+    y: 0,
+    transition: {
+      duration: 1, 
+      ease: "easeInOut",
+      delay: 1, 
+    }
+  }
+}
+
   return (
     <main>
       <section className="margin__setter mt-[5rem]">
@@ -12,10 +27,14 @@ const ContactPage = () => {
       </section>
       <section className="margin__setter my-[10rem]">
         <div className="lg:flex items-start justify-between">
-          <div>
+          <Reveal delay={0.5}>
             <GMTClock />
-          </div>
-          <div className="lg:w-1/2 w-full lg:mt-0 mt-[5rem]">
+          </Reveal>
+          <a.div className="lg:w-1/2 w-full lg:mt-0 mt-[5rem]"
+            initial="initial"
+            animate="animate"
+            variants={formAnim}
+          >
           <form class="target__form" action="https://formsubmit.io/send/ee2f7dc4-1dec-4100-81c0-054138a44eb8" method="POST">
               <input type="hidden" name="_redirect" id="name" value="https://www.linkedin.com/in/william-jones-450715251/"/>
               <p class="my-[1.25rem]">Your Name <sup>*</sup></p>
@@ -27,7 +46,7 @@ const ContactPage = () => {
               <input name="_formsubmit_id" type="text" style={{display:"none"}}/>
               <input class="target-submit-button text-xl py-2 px-4 rounded-2xl font-medium mt-[1.25rem] w-[fit-content] hover:cursor-pointer" type="submit" value="Send Message"/>
           </form>
-          </div>
+          </a.div>
         </div>
         <div className="lg:mt-[10rem] mt-[5rem]">
           <p className="opacity-50 lg:text-lg text-sm mb-2">Prefer LinkedIn?</p>

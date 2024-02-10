@@ -16,6 +16,9 @@ import SecondaryCta from "./SecondaryCta";
 import ProjectShowcase from "./ProjectShowcase";
 import FooterCta from "./FooterCta";
 
+import Reveal from "./Utils/Reveal";
+import SlidingImage from "./Utils/AnimatedImage";
+
 const HomePage = () => {
 
   const [visible, setVisible] = useState(false)
@@ -60,29 +63,26 @@ const HomePage = () => {
               customLetter="C"
               headerText="reative front end developer"
             />
-            <p className="lg:w-[50%] lg:mt-[0rem] mt-[2.5rem]">
-              Bilingual English and French creative front-end developer studying
-              business and management at Exeter University.
-            </p>
+            <Reveal delay={0.5}>
+              <p className="lg:w-[70%] lg:ml-[2.5rem] lg:mt-[0rem] mt-[2.5rem]">
+                Bilingual English and French creative front-end developer studying
+                business and management at Exeter University.
+              </p>
+            </Reveal>
           </div>
-          <p className="font-medium lg:w-[50%] my-[2.5rem] text-2xl">
-            I help small businesses and professional stand out from competitors
-            with a fast, dynamic and modern website.
-          </p>
+          <Reveal delay={1}>
+            <p className="font-medium lg:w-[50%] my-[2.5rem] text-2xl">
+              I help small businesses and professional stand out from competitors
+              with a fast, dynamic and modern website.
+            </p>
+          </Reveal>
           <GlobalCta ctaText="Contact me" />
         </section>
 
         <section className="">
           <div className="lg:flex lg:ml-[40%] mx-auto w-[95%] items-end lg:w-full lg:mr-[2.5%] lg:gap-[2rem]">
             <div className="lg:order-2">
-              <Image
-                src={HomePageImage}
-                width={400}
-                height={600}
-                alt="Will Jones"
-                placeholder="blur"
-                className="w-[full] h-[auto] xl:w-[400px] xl:h-[600px] 2xl:w-[550px] 2xl:h-[auto] rounded-2xl mt-[5rem] mb-[2.5rem] lg:my-[2.5rem] z-[5]"
-              />
+              <SlidingImage src={HomePageImage} width="400" height="600" className="w-[full] h-[auto] xl:w-[400px] xl:h-[600px] 2xl:w-[550px] 2xl:h-[auto] rounded-2xl mt-[5rem] mb-[2.5rem] lg:my-[2.5rem] z-[5]" />
             </div>
             <p className="mb-[5rem] lg:w-[25%] xl:w-[30%] 2xl:w-[25%] lg:order-1">
               Starting in 2021, I’ve amassed over 2 years of experience working
