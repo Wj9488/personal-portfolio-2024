@@ -37,7 +37,7 @@ const Nav = () => {
     };
   }, [isVisible, controls, lastScrollY]);
   return (
-    <a.nav className="z-99 sticky top-1 flex items-center justify-between my-2"
+    <a.nav className="z-[99] sticky top-1 flex items-center justify-between my-2"
     animate={controls}
     >
       <div className="bg-[#EDEDE9] px-4 lg:py-1 py-2 rounded-2xl z-10">

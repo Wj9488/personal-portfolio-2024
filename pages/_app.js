@@ -43,7 +43,6 @@ export default function App({ Component, pageProps }) {
   return (
       <div className={`main global__font_setter ${f.className}`}>
           <AnimatePresence mode='wait'>
-              {/* Pass the dynamically set minusVar to the Footer */}
               <Component key={router.route} {...pageProps} />
               <Footer initialVar={0.65} minusVar={minusVar}/>
           </AnimatePresence>
