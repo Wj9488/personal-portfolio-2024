@@ -1,7 +1,19 @@
 import Link from "next/link"
-import { motion as a } from "framer-motion"
+import { motion as a, useAnimation, useInView } from "framer-motion"
+import { useEffect, useRef } from "react"
 
 const GlobalCta = ({ ctaText }) => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
+  const mainControl = useAnimation()
+
+  useEffect(() => {
+    if (isInView) {
+        mainControl.start("animate")
+    }
+  }, [isInView])
+
 
   const animCta = {
     initial: {opacity: 0},
@@ -17,9 +29,9 @@ const GlobalCta = ({ ctaText }) => {
 
   return (
     <Link href={"/contact"}>
-        <a.button className="cta__border text-xl py-2 px-4 rounded-2xl font-medium hvr"
+        <a.button ref={ref} className="cta__border text-xl py-2 px-4 rounded-2xl font-medium hvr"
         initial="initial"
-        animate="animate"
+        animate={mainControl}
         variants={animCta}
         >
             {ctaText}

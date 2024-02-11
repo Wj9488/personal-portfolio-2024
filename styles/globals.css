@@ -4,9 +4,9 @@
 @tailwind utilities;
 
 body {
-  /* background-color: #EDEDE9; */
-  /* background: linear-gradient(0.25turn, #FB5607, #ebf8e1, #FB5607); */
   background-color: #EDEDE9;
+  /* background: linear-gradient(0.25turn, #FB5607, #ebf8e1, #FB5607); */
+  /* background-color: #FB5607; */
   min-height: 100vh;
 
 }
@@ -25,6 +25,10 @@ body {
 }
 .global__bg {
   background-color: var(--global-bg);
+}
+
+.b__bottom {
+  border-bottom: 1px solid var(--global-secondary-col);
 }
 
 .global__font_setter {

@@ -1,8 +1,13 @@
 import Link from "next/link"
 import Image from "next/image"
+import { useScroll, useTransform, motion as a } from "framer-motion"
 import GithubImg from "../public/Images/github-mark.png"
 
-const Footer = () => {
+const Footer = ({initialVar, minusVar}) => {
+  const { scrollYProgress } = useScroll();
+  const footerDivTransform = useTransform(scrollYProgress, [initialVar, 1], [minusVar, "0px"]);
+  const z = useTransform(scrollYProgress, [0, 1], [-90, 1]);
+
   const scrollTop = () => {
     window.scrollTo({
       top: 0,
@@ -10,10 +15,12 @@ const Footer = () => {
     });
   }
   return (
-    <footer className="mt-[10rem] mb-[2.5rem] border__top text-lg margin__setter global__bg">
+    <a.footer className="relative mt-[4rem] mb-[2.5rem] border__top text-lg margin__setter global__bg"
+      style={{y: footerDivTransform, zIndex: z}}
+    >
       <div className="flex items-center justify-between pt-1">
         <p>William.Jones</p>
-        <ul className="flex items-center justify-between gap-10 bg-[#EDEDE9] px-4 py-1 rounded-2xl">
+        <ul className="flex items-center justify-between gap-10 px-4 py-1 rounded-2xl">
           <li>
             <Link href={"https://github.com/Wj9488"} target="_blank">
               <Image 
@@ -47,7 +54,7 @@ const Footer = () => {
             }}
           />
         ))}
-    </footer>
+    </a.footer>
   );
 };
 

@@ -16,7 +16,7 @@ export default function SlidingImage({ src, height, width, className }) {
             initial="initial" 
             animate="animate" 
             variants={variants} 
-            transition={{ ease:"easeInOut", duration: 1 }}
+            transition={{ ease: "easeInOut", duration: 1, delay: 0.5 }}
         >
             <Image 
                 src={src}

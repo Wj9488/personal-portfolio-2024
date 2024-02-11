@@ -48,11 +48,11 @@ const formAnim = {
           </form>
           </a.div>
         </div>
-        <div className="lg:mt-[10rem] mt-[5rem]">
+      </section>
+      <div className="px-[2.5%] lg:mt-[10rem] mt-[5rem] pb-[5rem] shadow-lg">
           <p className="opacity-50 lg:text-lg text-sm mb-2">Prefer LinkedIn?</p>
           <SecondaryCta ctaText="Message me on LinkedIn" />
-        </div>
-      </section>
+      </div>
     </main>
   );
 };

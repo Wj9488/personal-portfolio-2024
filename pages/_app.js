@@ -1,7 +1,8 @@
 import Footer from "@/Components/Footer";
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
-import localFont from "next/font/local"
+import localFont from "next/font/local";
+import { useRouter } from 'next/router'; // Import useRouter hook
 
 const f = localFont({ 
   src: [
@@ -20,12 +21,31 @@ const f = localFont({
   ]
 })
 
-export default function App({ Component, pageProps, router }) {
+export default function App({ Component, pageProps }) {
+  const router = useRouter(); // Use useRouter hook to access router object
+
+  // Determine minusVar based on the current route
+  let minusVar;
+  switch (router.pathname) {
+    case '/about':
+      minusVar = '-600px';
+      break;
+    case '/':
+      minusVar = '-1000px';
+      break;
+    case '/contact':
+      minusVar = '-200px';
+      break;
+    default:
+      minusVar = '-600px'; // Default value if needed
+  }
+
   return (
       <div className={`main global__font_setter ${f.className}`}>
           <AnimatePresence mode='wait'>
+              {/* Pass the dynamically set minusVar to the Footer */}
               <Component key={router.route} {...pageProps} />
-              <Footer />
+              <Footer initialVar={0.65} minusVar={minusVar}/>
           </AnimatePresence>
       </div>
   )

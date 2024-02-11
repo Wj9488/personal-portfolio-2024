@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 import { useState, useEffect } from "react"
 
@@ -15,11 +14,19 @@ import AbsoluteText from "./AbsoluteText";
 import SecondaryCta from "./SecondaryCta";
 import ProjectShowcase from "./ProjectShowcase";
 import FooterCta from "./FooterCta";
+import Footer from "./Footer";
 
 import Reveal from "./Utils/Reveal";
 import SlidingImage from "./Utils/AnimatedImage";
 
+import { useScroll, useTransform, motion as a } from "framer-motion"
+
 const HomePage = () => {
+
+  const { scrollYProgress } = useScroll();
+
+  const myImageTranslate = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"])
+  const scale = useTransform(scrollYProgress, [0, 1], [1.0, 1.5]);
 
   const [visible, setVisible] = useState(false)
 
@@ -81,9 +88,11 @@ const HomePage = () => {
 
         <section className="">
           <div className="lg:flex lg:ml-[40%] mx-auto w-[95%] items-end lg:w-full lg:mr-[2.5%] lg:gap-[2rem]">
-            <div className="lg:order-2">
+            <a.div className="lg:order-2"
+            style={{ y: myImageTranslate, scale }}
+            >
               <SlidingImage src={HomePageImage} width="400" height="600" className="w-[full] h-[auto] xl:w-[400px] xl:h-[600px] 2xl:w-[550px] 2xl:h-[auto] rounded-2xl mt-[5rem] mb-[2.5rem] lg:my-[2.5rem] z-[5]" />
-            </div>
+            </a.div>
             <p className="mb-[5rem] lg:w-[25%] xl:w-[30%] 2xl:w-[25%] lg:order-1">
               Starting in 2021, I’ve amassed over 2 years of experience working
               on both personal projects and client projects alongside agencies

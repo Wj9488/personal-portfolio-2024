@@ -3,7 +3,7 @@ import LargeHeader from "./LargeHeader";
 
 const FooterCta = () => {
   return (
-    <div className="margin__setter mb-[5px]">
+    <section className="relative z-[10] px-[2.5%] mb-[1rem] pb-[5rem] shadow-lg">
       <div className="mt-[10rem] lg:w-[70%] xl:w-[60%] lg:ml-[10rem] ml-[1.25rem] mb-[2.5rem]">
         <LargeHeader customLetter="L" headerText="et's work together." />
       </div>
@@ -22,7 +22,7 @@ const FooterCta = () => {
             </button>
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 
