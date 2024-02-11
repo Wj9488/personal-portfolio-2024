@@ -2,9 +2,12 @@ import LargeHeader from "./LargeHeader";
 import GMTClock from "./AnimatedComponents/GMTClock";
 import SecondaryCta from "./SecondaryCta";
 import Reveal from "./Utils/Reveal";
-import {motion as a} from "framer-motion"
+import { useScroll, useTransform, motion as a } from "framer-motion";
 
 const ContactPage = () => {
+
+  const { scrollYProgress } = useScroll();
+  const transformBorder = useTransform(scrollYProgress, [0.75, 1], ["0px", "30px"]);
 const formAnim = {
   initial: {opacity: 0, y: 5},
   animate: {
@@ -49,10 +52,12 @@ const formAnim = {
           </a.div>
         </div>
       </section>
-      <div className="px-[2.5%] lg:mt-[10rem] mt-[5rem] pb-[5rem] shadow-lg">
+      <a.div className="px-[2.5%] lg:mt-[10rem] mt-[5rem] pb-[5rem] shadow-lg"
+      style={{borderBottomLeftRadius: transformBorder, borderBottomRightRadius: transformBorder}}
+      >
           <p className="opacity-50 lg:text-lg text-sm mb-2">Prefer LinkedIn?</p>
           <SecondaryCta ctaText="Message me on LinkedIn" />
-      </div>
+      </a.div>
     </main>
   );
 };
