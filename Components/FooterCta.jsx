@@ -4,9 +4,9 @@ import { useScroll, useTransform, motion as a } from "framer-motion";
 
 const FooterCta = () => {
   const { scrollYProgress } = useScroll();
-  const transformBorder = useTransform(scrollYProgress, [0, 1], ["0px", "30px"]);
+  const transformBorder = useTransform(scrollYProgress, [0.75, 1], ["0px", "30px"]);
   return (
-    <a.section className="relative z-[10] px-[2.5%] mb-[1rem] pb-[5rem] shadow-lg"
+    <a.section className="relative z-[10] px-[2.5%] mb-[1.1rem] pb-[5rem] shadow-lg"
     style={{borderBottomLeftRadius: transformBorder, borderBottomRightRadius: transformBorder}}
     >
       <div className="mt-[10rem] lg:w-[70%] xl:w-[60%] lg:ml-[10rem] ml-[1.25rem] mb-[2.5rem]">

@@ -28,20 +28,20 @@ export default function App({ Component, pageProps }) {
   let minusVar;
   switch (router.pathname) {
     case '/about':
-      minusVar = '-600px';
+      minusVar = '-700px';
       break;
     case '/':
-      minusVar = '-1000px';
+      minusVar = '-2000px';
       break;
     case '/contact':
       minusVar = '-200px';
       break;
     default:
-      minusVar = '-600px'; // Default value if needed
+      minusVar = '-500px'; // Default value if needed
   }
 
   return (
-      <div className={`main global__font_setter ${f.className}`}>
+      <div className={`global__font_setter ${f.className}`}>
           <AnimatePresence mode='wait'>
               <Component key={router.route} {...pageProps} />
               <Footer initialVar={0.65} minusVar={minusVar}/>

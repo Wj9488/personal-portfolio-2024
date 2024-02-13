@@ -1,6 +1,8 @@
 
 import { useState, useEffect } from "react"
 
+import Image from "next/image"
+
 import LargeHeader from "./LargeHeader";
 import GlobalCta from "./GlobalCta";
 
@@ -8,6 +10,8 @@ import HomePageImage from "../public/Images/w__home.jpg";
 import StrongWordsImage from "../public/Images/strong__words.jpg";
 import FrenchForAllImage from "../public/Images/french__for_all.webp";
 import BirdlimeImage from "../public/Images/birdlime.jpg";
+import FrenchForAllThumb from "../public/Images/french__for_all_thumb.webp"
+import StrongWordsThumb from "../public/Images/strong__words_thumb.webp"
 
 import SmallHeader from "./SmallHeader";
 import AbsoluteText from "./AbsoluteText";
@@ -142,7 +146,7 @@ const HomePage = () => {
 
         <section className="margin__setter mt-[4.5rem]" id="projects">
           <SmallHeader customLetter="P" headerText="rojects" />
-          <div>
+          <div className="relative">
             <ProjectShowcase
               projectTitle="Strong Words"
               projectDetails="Created in collaboration with Array® for a content creation business focussing on the book review niche. The client tasked us with enhancing their brand’s online presence with a modern website rebrand. The business, wanting to cater to the growing demand for digital offerings, also tasked us with creating a sleek new email newsletter offering for readers.  "
@@ -150,6 +154,8 @@ const HomePage = () => {
               projectLinkText="See live site"
               imgAlt="Strong Words"
               imgSource={StrongWordsImage}
+              thumbAlt="Strong Words Thumbnail"
+              thumbSource={StrongWordsThumb}
             />
           </div>
           <div className="mt-[1.25rem]">
@@ -160,6 +166,8 @@ const HomePage = () => {
               projectLinkText="See live site"
               imgAlt="French For All"
               imgSource={FrenchForAllImage}
+              thumbAlt="French For All Thumb"
+              thumbSource={FrenchForAllThumb}
             />
           </div>
           <div className="mt-[1.25rem] my-[5rem]">

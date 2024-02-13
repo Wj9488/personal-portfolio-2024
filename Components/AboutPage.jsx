@@ -38,10 +38,10 @@ const AboutPage = () => {
       </section>
       <section className="lg:text-lg margin__setter mt-[2.5rem]">
         <div className="lg:ml-[40%]">
-          <Reveal delay={0.5}>
+          <Reveal delay={0.125}>
             <h2 className="opacity-50 mb-[1.25rem] lg:text-lg text-sm">About Me</h2>
           </Reveal>
-          <Reveal delay={0.75}>
+          <Reveal delay={0.25}>
             <p>
               I love turning my design ideas into real products that people can
               use. It's very satisfying to use my skills to help clients get great
@@ -65,25 +65,25 @@ const AboutPage = () => {
 
       <section className="mt-[5rem] lg:mt-[10rem]">
         <div className="grid grid-cols-2 lg:grid-cols-3 grid-rows-2 text-lg lg:gap-4 gap-2">
-        <Reveal delay={0.1}>
+        <Reveal delay={0.05}>
           <div className="text-center">
             <p className="text-[6rem] lg:text-[8rem] xl:text-[10rem] 2xl:text-[12rem] accent__col_text mb-[1.25rem]">3</p>
             <p className="font-medium">Projects Completed</p>
           </div>
         </Reveal>
-        <Reveal delay={0.2}>
+        <Reveal delay={0.1}>
           <div className="text-center">
             <p className="text-[6rem] lg:text-[8rem] xl:text-[10rem] 2xl:text-[12rem] accent__col_text mb-[1.25rem]">2.5</p>
             <p className="font-medium">Years of Coding Experience</p>
           </div>
           </Reveal>
-          <Reveal delay={0.3}>
+          <Reveal delay={0.15}>
           <div className="text-center">
             <p className="text-[6rem] lg:text-[8rem] xl:text-[10rem] 2xl:text-[12rem] accent__col_text mb-[1.25rem]">1</p>
             <p className="font-medium">Bootcamps Taught</p>
           </div>
           </Reveal>
-          <Reveal delay={0.4}>
+          <Reveal delay={0.2}>
           <div className="text-center">
             <p className="text-[6rem] lg:text-[8rem] xl:text-[10rem] 2xl:text-[12rem] accent__col_text mb-[1.25rem]">5</p>
             <p className="font-medium">Coding Languages & Frameworks</p>
