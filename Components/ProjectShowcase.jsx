@@ -89,7 +89,7 @@ const ProjectShowcase = ({
             alt={thumbAlt}
             width={1250}
             height="auto"
-            className="lg:w-[1250px] w-[1750px] h-[auto] rounded-2xl"
+            className="2xl:w-[2000px] lg:w-[1250px] w-[1750px] h-[auto] rounded-2xl"
           />
         </a.div>
       </div>

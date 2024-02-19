@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }) {
       minusVar = '-200px';
       break;
     default:
-      minusVar = '-500px'; // Default value if needed
+      minusVar = '-0px'; // Default value if needed
   }
 
   return (

@@ -49,10 +49,22 @@ body {
 }
 
 .cta__border {
-  border: solid 2px var(--global-accent-col);
+  border: 2px solid var(--global-accent-col);
+  transition: all 0.2s ease-in-out;
+}
+.cta__border:hover{
+  -webkit-box-shadow: inset 2.5px 0px 0.5px 0px var(--global-accent-col);
+  -moz-box-shadow: inset 2.5px 0px 0.5px 0px var(--global-accent-col);
+  box-shadow: inset 2.5px 0px 0.5px 0px var(--global-accent-col);
 }
 .secondary__cta_border {
   border: solid 1px var(--global-secondary-col);
+  transition: all 0.2s ease-in-out;
+}
+.secondary__cta_border:hover{
+  -webkit-box-shadow: inset 2.5px 0px 0.5px 0px var(--global-secondary-col);
+  -moz-box-shadow: inset 2.5px 0px 0.5px 0px var(--global-secondary-col);
+  box-shadow: inset 2.5px 0px 0.5px 0px var(--global-secondary-col);
 }
 
 .p {
@@ -76,9 +88,21 @@ h1{
 }
 .cta__large_border {
   border: 2px solid var(--global-accent-col);
+  transition: all 0.2s ease-in-out;
+}
+.cta__large_border:hover {
+  -webkit-box-shadow: inset 2.5px 0px 0.5px 0px var(--global-accent-col);
+  -moz-box-shadow: inset 2.5px 0px 0.5px 0px var(--global-accent-col);
+  box-shadow: inset 2.5px 0px 0.5px 0px var(--global-accent-col);
 }
 .cta__large_border_l {
   border: 2px solid var(--global-secondary-col);
+  transition: all 0.2s ease-in-out;
+}
+.cta__large_border_l:hover {
+  -webkit-box-shadow: inset 2.5px 0px 0.5px 0px var(--global-secondary-col);
+  -moz-box-shadow: inset 2.5px 0px 0.5px 0px var(--global-secondary-col);
+  box-shadow: inset 2.5px 0px 0.5px 0px var(--global-secondary-col);
 }
 
 /* Contact Form */
@@ -94,5 +118,5 @@ h1{
   transition: all 0.2s ease-in-out;
 }
 .hvr:hover{
-  scale:1.05;
+  scale:1.02;
 }

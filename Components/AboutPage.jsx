@@ -38,10 +38,10 @@ const AboutPage = () => {
       </section>
       <section className="lg:text-lg margin__setter mt-[2.5rem]">
         <div className="lg:ml-[40%]">
-          <Reveal delay={0.125}>
+          <Reveal delay={0.05}>
             <h2 className="opacity-50 mb-[1.25rem] lg:text-lg text-sm">About Me</h2>
           </Reveal>
-          <Reveal delay={0.25}>
+          <Reveal delay={0.2}>
             <p>
               I love turning my design ideas into real products that people can
               use. It's very satisfying to use my skills to help clients get great

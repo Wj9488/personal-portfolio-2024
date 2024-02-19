@@ -29,12 +29,12 @@ const GlobalCta = ({ ctaText }) => {
 
   return (
     <Link href={"/contact"}>
-        <a.button ref={ref} className="cta__border text-xl py-2 px-4 rounded-2xl font-medium hvr"
+        <a.button ref={ref} className=" cta__border text-xl py-2 px-4 rounded-2xl font-medium hvr "
         initial="initial"
         animate={mainControl}
         variants={animCta}
         >
-            {ctaText}
+          {ctaText}
         </a.button>
     </Link>
   )

@@ -18,19 +18,19 @@ const Reveal = ({ children, width, delay }) => {
   return (
     <div
     ref={ref} 
-    style={{position: "relative", width, overflow: "hidden"}} >
+    style={{width, overflow: "hidden",}} >
         <a.div
             variants={{
-                initial: {opacity: 0, y: 5},
-                visible: {opacity: 1, y: 0}
+                initial: {opacity: 0},
+                visible: {opacity: 1}
             }}
             initial="initial"
             animate={mainControl}
-            transition={{ duration: 1, delay: delay }}
+            transition={{ ease: "easeInOut", duration: 1, delay: delay }}
         >
             {children}
         </a.div>
-        <a.div 
+        {/* <a.div 
             variants={{
                 hidden: {left:0, borderRadius: "0%"},
                 visible: {left:"100%", borderRadius: "10%"}
@@ -48,7 +48,7 @@ const Reveal = ({ children, width, delay }) => {
                 zIndex: 20
             }}
         >    
-        </a.div>
+        </a.div> */}
     </div>
   )
 }

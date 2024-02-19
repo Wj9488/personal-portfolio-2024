@@ -39,7 +39,7 @@ const formAnim = {
             variants={formAnim}
           >
           <form class="target__form" action="https://formsubmit.io/send/ee2f7dc4-1dec-4100-81c0-054138a44eb8" method="POST">
-              <input type="hidden" name="_redirect" id="name" value="https://www.linkedin.com/in/william-jones-450715251/"/>
+              <input type="hidden" name="_redirect" id="name" value="https://william.services/message-sent"/>
               <p class="my-[1.25rem]">Your Name <sup>*</sup></p>
               <input class="rounded-2xl bg-transparent py-2 px-4 text-lg border border-[#070707]" placeholder="Name..." required name="name" type="text" id="name"/>
               <p class="my-[1.25rem]">Your Email <sup>*</sup></p>
