@@ -39,7 +39,7 @@ export default function ParallaxImages() {
                     transition={fadeTransition}
                     style={{ y: imageTwoTranslate, scale }}
                 >
-                    <SlidingImage height="600" width="400" src={P_side3} className="lg:ml-[1.25rem] mt-[5rem] ml-[0rem] rounded-2xl lg:w-[400px] lg:h-[600px] h-[auto] w-[350px]" />
+                    <SlidingImage height="600" width="400" src={P_side4} className="lg:ml-[1.25rem] mt-[5rem] ml-[0rem] rounded-2xl lg:w-[400px] lg:h-[600px] h-[auto] w-[350px]" />
                 </a.div>
                 <a.div
                     initial={{ opacity: 0 }}
@@ -47,7 +47,7 @@ export default function ParallaxImages() {
                     transition={fadeTransition}
                     style={{ y: imageThreeTranslate, scale }}
                 >
-                    <SlidingImage height="375" width="275" src={P_side4} className="lg:ml-[2rem] ml-[1.25rem] mt-[2.5rem] lg:mt-[15rem] lg:block hidden rounded-2xl" />
+                    <SlidingImage height="375" width="275" src={P_side3} className="lg:ml-[2rem] ml-[1.25rem] mt-[2.5rem] lg:mt-[15rem] lg:block hidden rounded-2xl" />
                 </a.div>
                 <a.div
                     initial={{ opacity: 0 }}

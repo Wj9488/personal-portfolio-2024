@@ -36,7 +36,7 @@ const Footer = ({initialVar, minusVar}) => {
             <button className="hover:opacity-50 transition-all duration-200" onClick={scrollTop}>Back to top</button>
           </li>
           <li className="lg:text-lg hidden lg:block">
-            <Link className="hover:opacity-50 transition-all duration-200" href={"/#projects"}>Projects</Link>
+            <Link className="hover:opacity-50 transition-all duration-200" href={"/projects"}>Projects</Link>
           </li>
           <li className="lg:text-lg">
             <Link className="hover:opacity-50 transition-all duration-200" href={"/about"}>About</Link>

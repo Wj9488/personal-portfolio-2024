@@ -36,6 +36,9 @@ export default function App({ Component, pageProps }) {
     case '/contact':
       minusVar = '-200px';
       break;
+    case '/projects':
+      minusVar = '-700px';
+      break;
     default:
       minusVar = '-0px'; // Default value if needed
   }
