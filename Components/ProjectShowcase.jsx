@@ -15,6 +15,7 @@ const ProjectShowcase = ({
   imgAlt,
   thumbSource,
   thumbAlt,
+  translationheight
 }) => {
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.25]);
@@ -23,7 +24,7 @@ const ProjectShowcase = ({
   const rawTranslateImage = useTransform(
     scrollYProgress,
     [0, 1],
-    ["0px", "-600px"]
+    ["0px", translationheight]
   );
 
   const [translateImage, setTranslateImage] = useState(rawTranslateImage);

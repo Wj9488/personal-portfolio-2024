@@ -156,6 +156,7 @@ const HomePage = () => {
               imgSource={StrongWordsImage}
               thumbAlt="Strong Words Thumbnail"
               thumbSource={StrongWordsThumb}
+              translationheight="-600px"
             />
           </div>
           <div className="mt-[1.25rem]">
@@ -168,6 +169,7 @@ const HomePage = () => {
               imgSource={FrenchForAllImage}
               thumbAlt="French For All Thumb"
               thumbSource={FrenchForAllThumb}
+              translationheight="-500px"
             />
           </div>
           <div className="mt-[1.25rem] my-[5rem]">
@@ -178,6 +180,7 @@ const HomePage = () => {
               projectLinkText="Coming Soon"
               imgAlt="Birdlime Media"
               imgSource={BirdlimeImage}
+              translationheight="-600px"
             />
           </div>
           <div className="my-[2.5rem] flex items-center gap-[1.25rem]">

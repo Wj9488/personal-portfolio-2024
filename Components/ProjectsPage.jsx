@@ -24,17 +24,6 @@ const ProjectsPage = () => {
         </section>
         <section className="margin__setter mt-[4.5rem]" id="projects">
         <div className="relative">
-            <ProjectShowcase
-              projectTitle="French For All"
-              projectDetails="A freelance project built for a professional native French Tutor doing both online and in-person teaching to clients. I was tasked with building a fully responsive, effective and modern website to convert more traffic from Facebook into paying clients."
-              projectLink="https://french-lesson.com"
-              projectLinkText="See live site"
-              imgAlt="French For All"
-              imgSource={FrenchForAllImage}
-              thumbAlt="French For All Thumb"
-              thumbSource={FrenchForAllThumb}
-            />
-          </div>
           <div className="mt-[1.25rem]">
             <ProjectShowcase
               projectTitle="Strong Words"
@@ -45,6 +34,19 @@ const ProjectsPage = () => {
               imgSource={StrongWordsImage}
               thumbAlt="Strong Words Thumbnail"
               thumbSource={StrongWordsThumb}
+              translationheight="-900px"
+            />
+          </div>
+          <ProjectShowcase
+              projectTitle="French For All"
+              projectDetails="A freelance project built for a professional native French Tutor doing both online and in-person teaching to clients. I was tasked with building a fully responsive, effective and modern website to convert more traffic from Facebook into paying clients."
+              projectLink="https://french-lesson.com"
+              projectLinkText="See live site"
+              imgAlt="French For All"
+              imgSource={FrenchForAllImage}
+              thumbAlt="French For All Thumb"
+              thumbSource={FrenchForAllThumb}
+              translationheight="-600px"
             />
           </div>
           <div className="mt-[1.25rem] my-[5rem]">
@@ -55,6 +57,7 @@ const ProjectsPage = () => {
               projectLinkText="Coming Soon"
               imgAlt="Birdlime Media"
               imgSource={BirdlimeImage}
+              translationheight="-600px"
             />
           </div>
         </section>
